@@ -432,6 +432,7 @@ extension AZPinController: AZNumPadDelegate {
                 return;
             }
             self.delegate?.pinSuccessIn?(self);
+            return
         }
         
         self.reset();
