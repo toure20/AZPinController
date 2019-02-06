@@ -354,6 +354,7 @@ extension AZPinController {
         self.pinField?.reset();
         _pinText.reset();
         deleteButton.isHidden = true
+        rightButton.isHidden = false
     }
     
     /// When needed, hides the field and starts loading
