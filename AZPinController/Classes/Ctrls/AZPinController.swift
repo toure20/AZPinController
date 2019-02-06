@@ -353,6 +353,7 @@ extension AZPinController {
     open func reset() {
         self.pinField?.reset();
         _pinText.reset();
+        deleteButton.isHidden = true
     }
     
     /// When needed, hides the field and starts loading
