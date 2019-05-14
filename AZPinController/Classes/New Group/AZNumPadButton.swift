@@ -125,7 +125,7 @@ class AZNumPadButton: UIView {
             // TODO: use palette
             colorKeyframeAnimation.values = [
                 self.backgroundColor!.cgColor,
-                self.mainColor.cgColor];
+                self.mainColor.withAlphaComponent(0.2).cgColor];
             colorKeyframeAnimation.keyTimes = [
                 0, NSNumber(value: AZNumPadButton.animationDurationDefault / 2.0)];
             colorKeyframeAnimation.duration = AZNumPadButton.animationDurationDefault;
