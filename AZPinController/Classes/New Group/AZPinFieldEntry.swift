@@ -9,7 +9,7 @@ import Foundation
 import Foundation
 import UIKit;
 
-class AZPinFieldEntry: UIView {
+open class AZPinFieldEntry: UIView {
     static let animationDurationDefault: TimeInterval = 0.2;
     var fillColor: UIColor = UIColor.black {
         didSet {
@@ -34,7 +34,7 @@ class AZPinFieldEntry: UIView {
         self.init(frame: CGRect.zero);
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder);
     }
     
@@ -82,7 +82,7 @@ class AZPinFieldEntry: UIView {
         self.layer.borderColor = self.fillColor.cgColor;
     }
     
-    override func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews();
         self.circleUp();
     }

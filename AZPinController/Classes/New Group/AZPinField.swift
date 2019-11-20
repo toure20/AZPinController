@@ -8,7 +8,7 @@
 import Foundation
 import UIKit;
 
-public class AZPinField: UIView {
+open class AZPinField: UIView {
     static let heightDefault: CGFloat = 16;
     static let numberOfOscillations: Int = 5;
     static let oscillationAmp: CGFloat = 30;
