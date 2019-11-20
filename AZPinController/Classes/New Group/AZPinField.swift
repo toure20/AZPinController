@@ -13,7 +13,7 @@ open class AZPinField: UIView {
     static let numberOfOscillations: Int = 5;
     static let oscillationAmp: CGFloat = 30;
     static let oscillationDuration: TimeInterval = 0.05;
-    var fillColor: UIColor? {
+    open var fillColor: UIColor? {
         didSet {
             if self.fillColor == nil { return }
             _entryList.forEach {
@@ -21,7 +21,7 @@ open class AZPinField: UIView {
             }
         }
     };
-    var successColor: UIColor? {
+    open var successColor: UIColor? {
         didSet {
             if self.successColor == nil { return }
             _entryList.forEach {
@@ -29,7 +29,7 @@ open class AZPinField: UIView {
             }
         }
     };
-    var errorColor: UIColor? {
+    open var errorColor: UIColor? {
         didSet {
             if self.errorColor == nil { return }
             _entryList.forEach {
@@ -37,19 +37,19 @@ open class AZPinField: UIView {
             }
         }
     };
-    var fillAnimate: Bool = true {
+    open var fillAnimate: Bool = true {
         didSet {
             _entryList.forEach {
                 $0.fillAnimate = self.fillAnimate;
             }
         }
     };
-    private var _numberOfEntries: Int = 4;
-    private var _entryList: [AZPinFieldEntry] = [];
-    private var _filledCount: Int = 0;
-    private var _numOfShakes: Int = 0;
-    private var _shakeDirection: Int = -1;
-    private var _shakeAmp: CGFloat = 0;
+    open var _numberOfEntries: Int = 4;
+    open var _entryList: [AZPinFieldEntry] = [];
+    open var _filledCount: Int = 0;
+    open var _numOfShakes: Int = 0;
+    open var _shakeDirection: Int = -1;
+    open var _shakeAmp: CGFloat = 0;
     // MARK: - init methods
     override public init(frame: CGRect) {
         super.init(frame: frame);
