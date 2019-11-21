@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AZPinController'
-  s.version          = '0.1.12'
+  s.version          = '0.2.1'
   s.summary          = 'Simple UIViewController for pin code entering'
   s.description      = 'AZPinController can be used for cases when you need to enter a pin code of various lengths'
 
@@ -18,11 +18,12 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/kalmurzayev/AZPinController.git', :tag => s.version.to_s }
   s.ios.deployment_target = '10.0'
   s.source_files = 'AZPinController/Classes/**/*'
+  s.swift_version = '4.2'
   
   # s.resource_bundles = {
   #   'AZPinController' => ['AZPinController/Assets/*.png']
   # }
 
   s.frameworks = 'UIKit'
-  s.dependency 'SnapKit'
+  s.dependency 'SnapKit', '4.2.0'
 end

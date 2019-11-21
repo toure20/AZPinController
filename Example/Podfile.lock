@@ -1,13 +1,13 @@
 PODS:
-  - AZPinController (0.1.12):
-    - SnapKit
-  - Nimble (7.0.3)
+  - AZPinController (0.2.1):
+    - SnapKit (= 4.2.0)
+  - Nimble (8.0.4)
   - Quick (1.2.0)
-  - SnapKit (4.0.0)
+  - SnapKit (4.2.0)
 
 DEPENDENCIES:
   - AZPinController (from `../`)
-  - Nimble (~> 7.0.2)
+  - Nimble (~> 8.0.4)
   - Quick (~> 1.2.0)
 
 SPEC REPOS:
@@ -21,11 +21,11 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AZPinController: d99eb862eb2d63bde329f52864227e22f5360c0e
-  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  AZPinController: 2de52360c7abeabff605c1d2000a542282a7dc29
+  Nimble: 18d5360282923225d62b09d781f63abc1a0111fc
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
-  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: 312307898a1b0ac6013649f8935dbd37e2f0b3c0
+PODFILE CHECKSUM: 6561e1cc2a2ab6a393f9e784c5315dc55bd88557
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.5
