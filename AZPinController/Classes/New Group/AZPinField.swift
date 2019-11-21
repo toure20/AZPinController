@@ -66,37 +66,37 @@ open class AZPinField: UIView {
     }
     
     /// Fills the next Field Entry and increments filledCount
-    func addEntry() {
+    open func addEntry() {
         if _filledCount >= _numberOfEntries { return }
         _entryList[_filledCount].fill();
         _filledCount += 1;
     }
     
     /// Unfills the current Field Entry and decrements filledCount
-    func deleteEntry() {
+    open func deleteEntry() {
         if _filledCount <= 0 { return }
         _filledCount -= 1;
         _entryList[_filledCount].reset();
     }
     
     /// Resets the whole EntryField
-    func reset() {
+    open func reset() {
         _filledCount = 0;
         _entryList.forEach({ $0.reset() });
     }
     
     /// Fills all entries in success Color
-    func fillSuccess() {
+    open  func fillSuccess() {
         _entryList.forEach { $0.fillSuccess() };
     }
     
     /// Fills all entries in error color
-    func fillError() {
+    open func fillError() {
         _entryList.forEach { $0.fillError() };
     }
     
     /// trembles field entries while filling them in error color
-    func trembleError() {
+    open func trembleError() {
         self.fillError();
         self.trembleView(amplitude: 30, completion: {  self.reset() });
     }
